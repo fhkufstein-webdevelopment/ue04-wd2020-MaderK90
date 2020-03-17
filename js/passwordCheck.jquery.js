@@ -103,12 +103,9 @@ function PasswordChecker(wrapperId, passwordInputFieldId, passwordSubmitButtonId
             }
 
         }
-        //@todo
-        //have a look at javascript string methods and properties
-        //you could probably "match" it somehow
-        return true; //this needs to be replaced!
+
     };
-    //TODO 2 end
+
 }
 
 
