@@ -75,15 +75,34 @@ function PasswordChecker(wrapperId, passwordInputFieldId, passwordSubmitButtonId
     This method should return true if the length of passwordField value is greater or equal to this.minLength
      */
     this.checkForLength = function() {
-        //@todo
+        //
+
+        if(this.passwordField.length()>=this.minLength){
+            return true;
+        } else {
+            return false;
+
+        }
         //have a look at javascript string methods and properties
-        return true; //this needs to be replaced!
+         //this needs to be replaced!
     };
 
     /*
     This method returns true if no special Character "!§$_.:,;" is found in this.password - otherwise false
      */
     this.checkForSpecialCharacters = function() {
+
+        var specChar="!§$_.:,;";
+        for(var i=0;i<password.length;i++){
+
+            if(specChar.indexOf(password.charAt(i))==-1){
+                return true;
+
+            }else {
+                return false;
+            }
+
+        }
         //@todo
         //have a look at javascript string methods and properties
         //you could probably "match" it somehow
